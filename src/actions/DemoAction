@@ -1,0 +1,18 @@
+import react from 'react';
+import DemoDispatcher from "../dispatcher/DemoDispatcher";
+
+var DemoAction = {
+    increase: function(){
+        DemoDispatcher.dispatach({
+            actionType: "Increase"
+        });
+    },
+
+    decrease: function(){
+        DemoDispatcher.dispatch({
+            actionType: "Decrease"
+        });
+    }
+}
+
+export default DemoAction;
